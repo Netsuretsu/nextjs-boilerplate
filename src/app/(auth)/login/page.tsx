@@ -7,21 +7,23 @@ export default function Login() {
     <div>
       <h2>Login Page</h2>
 
-      <Button
-        onClick={() => {
-          signIn("github", { redirectTo: "/dashboard" });
-        }}
-      >
-        Sign In with Github
-      </Button>
+      <form>
+        <Button
+          onClick={() => {
+            signIn("github", { redirectTo: "/dashboard" });
+          }}
+        >
+          Sign In with Github
+        </Button>
 
-      <Button
-        onClick={() => {
-          signIn("google", { redirectTo: "/dashboard" });
-        }}
-      >
-        Sign In with Google
-      </Button>
+        <Button
+          onClick={() => {
+            signIn("google", { redirectTo: "/dashboard" });
+          }}
+        >
+          Sign In with Google
+        </Button>
+      </form>
     </div>
   );
 }
